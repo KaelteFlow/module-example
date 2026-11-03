@@ -1,0 +1,10 @@
+{
+  "id": "example",
+  "name": "Example Module",
+  "version": "1.0.0",
+  "description": "This is a example module",
+  "author": "Fabio Scherrers",
+  "requiredBackendVersion": "^1.0.0",
+  "requiredFrontendVersion": "^1.0.0",
+  "requiredFrameworkVersion": "^1.0.0"
+}

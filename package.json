@@ -1,0 +1,21 @@
+{
+  "name": "kaelteflow-module-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "core",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "build:core": "npm run build --workspace=core",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "bundle": "node bundle.js",
+    "bundle:build": "node bundle.js --build"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
