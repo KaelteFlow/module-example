@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "outDir": "./dist",
+    "rootDir": "..",
+    "baseUrl": "..",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
+    "useDefineForClassFields": false,
+    "paths": {
+      "@kaelteflow/module-core": ["core/src"],
+      "@kaelteflow/frontend-sdk": ["../../../frontend-sdk/dist", "../../../frontend-sdk/src/index.ts"]
+    }
+  },
+  "include": ["frontend/src/**/*", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

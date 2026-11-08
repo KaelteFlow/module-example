@@ -1,0 +1,33 @@
+{
+  "name": "@kaelteflow/example-module-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "main": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs",
+  "module": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs",
+  "typings": "./dist/types/kaelteflow-frontend-sdk.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/kaelteflow-frontend-sdk.d.ts",
+      "import": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs",
+      "default": "./dist/fesm2022/kaelteflow-frontend-sdk.mjs"
+    }
+  },
+  "dependencies": {
+    "tslib": "2.8.0"
+  },
+  "peerDependencies": {
+    "@kaelteflow/shared": "workspace:*",
+    "@kaelteflow/frontend-sdk": "workspace:*",
+    "@angular/common": "^22.2.4",
+    "@angular/core": "^22.2.4",
+    "@angular/router": "^22.2.4",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "ng-packagr": "^22.2.6",
+    "typescript": "^6.0.3"
+  },
+  "sideEffects": false
+}
