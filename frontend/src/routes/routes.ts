@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { Type } from '@angular/core';
 import { ExamplePageComponent } from '../components/ExamplePageComponent';
 
 /**
@@ -8,17 +7,17 @@ import { ExamplePageComponent } from '../components/ExamplePageComponent';
  */
 export const routes: Routes = [
   {
-    path: 'example',
+    path: '',
     component: ExamplePageComponent,
     data: {
       title: 'Beispiel-Modul',
     },
   },
   {
-    path: 'example/details',
-    loadComponent: () => import('../components/ExamplePageComponent').then(m => m.ExamplePageComponent as Type<unknown>),
+    path: 'test',
+    component: ExamplePageComponent,
     data: {
-      title: 'Beispiel-Details',
+      title: 'Beispiel-Modul',
     },
   },
 ];

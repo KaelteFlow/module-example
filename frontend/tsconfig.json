@@ -24,6 +24,10 @@
       "@kaelteflow/frontend-sdk": ["../../../frontend-sdk/dist", "../../../frontend-sdk/src/index.ts"]
     }
   },
+  "angularCompilerOptions": {
+    "compilationMode": "full",
+    "enableIvy": true
+  },
   "include": ["frontend/src/**/*", "src/**/*"],
   "exclude": ["node_modules", "dist"]
 }

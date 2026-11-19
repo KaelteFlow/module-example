@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 /**
  * Beispiel-Komponente für das Example-Frontend-Modul.
@@ -53,8 +53,11 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
       margin-bottom: 5px;
     }
 
-  `],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  `]
 })
-export class ExamplePageComponent {
+export class ExamplePageComponent implements OnInit {
+
+  ngOnInit(): void {
+    console.log('ExamplePageComponent initialized');
+  }
 }
