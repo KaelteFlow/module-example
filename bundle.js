@@ -259,13 +259,6 @@ function zipFrontendOutput(sourceDir, targetZipPath) {
 
   // ng-packagr erzeugt die Bundles direkt in dist/ (fesm2022, types, package.json etc.)
   let filesToZip = collectFilesRecursively(distDir);
-
-  // Fallback: Falls package.json nicht im dist-Ordner liegt, aus dem Submodul-Root mitnehmen
-  const subPackageJson = path.join(sourceDir, 'package.json');
-  if (fs.existsSync(subPackageJson) && !filesToZip.some(f => f.name === 'package.json')) {
-    filesToZip.push({ name: 'package.json', data: fs.readFileSync(subPackageJson) });
-  }
-
   if (filesToZip.length === 0) {
     console.warn(`[WARN] Keine Frontend-Dateien zum Zippen gefunden.`);
     return false;

@@ -12,7 +12,7 @@ export default defineConfig({
         lib: {
             entry: './src/index.ts',
             formats: ['es'],
-            fileName: 'kaelteflow-example-module-frontend',
+            fileName: 'index',
         },
         rollupOptions: {
             external: [
